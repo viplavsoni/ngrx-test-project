@@ -1,0 +1,12 @@
+<p>project works!</p>
+
+<form [formGroup]="projectForm">
+
+    <label for="name">Project Name: </label>
+    <input id="name" type="text" formControlName="name">
+
+    <label for="details">Project Details: </label>
+    <input id="details" type="text" formControlName="detail">
+
+    <button (click)="submit()">Submit</button>
+  </form>
