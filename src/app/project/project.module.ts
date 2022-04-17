@@ -6,6 +6,7 @@ import { ProjectComponent } from './project.component';
 import { StoreModule } from '@ngrx/store';
 import * as fromProjectModule from './reducers';
 import { ProjectRoutingModule } from './project-routing.module';
+import { proReducer } from './reducers';
 
 
 
@@ -17,7 +18,7 @@ import { ProjectRoutingModule } from './project-routing.module';
     CommonModule,
     CoreModule,
     ProjectRoutingModule,
-    StoreModule.forFeature('project', fromProjectModule.reducers)
+    StoreModule.forFeature('project', proReducer)
   ],
   exports: [
     ProjectComponent
